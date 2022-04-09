@@ -1,17 +1,7 @@
-\textbf{Question 1:} Let $M:K$ be a finite extension and $\alpha\in M$ with minimal polynomial $m$ over $K$. Show $deg(m)|[M:K]$.
-\begin{proof}
-Consider the simple extension $K(\alpha):K$. By Theorem $5.1.5$, $[K(\alpha):K]=deg(m)$. Since, $\alpha\in M$, $M:K(\alpha)$ is a field extension. By the tower law, $$[M:K]=[M:K(\alpha)][K(\alpha):K]=[M:K(\alpha)]deg(m).$$ Therefore $deg(m)|[M:K].$
-\end{proof}
-
-\textbf{Question 2:}\begin{enumerate}[(i)]
-    \item Let $K$ be a field and $f,g$ be nonzero polynomials over $K$. Let $L=SF_K(g)$. Show $SF_L(f)$ and $SF_K(fg)$ are isomorphic over $K.$
-    \item Let $f,g$ be nonzero polynomials over $\Q$. Prove $SF_{\Q}(fg)$ is the compositum of $SF_{\Q}(f)$ and $SF_{\Q}(g)$, all three fields viewed as subfield of $\C$.
+\textbf{Questions:}
+\begin{enumerate}
+    \item Is the homotopy type of a topological space determined by its homotopy groups OR can two spaces have the same homotopy groups, but no weak hom. equivalence between them? (answer must be yes... but that poses problems)
+    \item Why is the hom functor $\pi_*:Top\rightarrow GrSet$ and not to $GrAb$?
+    \item Homotopy type definition: the equivalence class under weak homotopy equivalence. However, does this necessarily satisfy symmetry?
+    \item The homotopy category of spaces... Is it the "image" of the functor $F:A\rightarrow B$? Alongside isomorphisms? Is it adding inverses to all weak homotopy equivalent maps?
 \end{enumerate}
-\begin{proof}
-\begin{enumerate}[(i)]
-    \item Identify $L=SF_K(g)$ as a subfield of $SF_K(fg)$ such that $$SF_K(fg):L:K.$$ By Lemma 6.2.14, $SF_K(fg) = SF_L(fg).$ Let $a_1,a_2,\dots,a_n,b_1,\dots,b_m$ be the roots of $fg$ in $L$ ordered by firstly the roots $a_i$ of $f$ and then the roots $b_j$ of $g$. Then $$SF_L(fg)\iso L(a_1,\dots,a_n,b_1,\dots,b_m)=L(a_1,\dots,a_n)\iso SF_L(f),$$
-    since $b_1,\dots,b_m\in L$. Therefore $SF_K(fg) = SF_L(f)$ as required.
-    \item Identify $SF_{\Q}(fg):SF_{\Q}(f):\Q$ and $SF_{\Q}(g)\subset SF_{\Q}(fg)$. By Lemma 6.2.14, $$SF_{\Q}(f)SF_{\Q}(g)\iso SF_{\Q(SF_{\Q}(g)}(f)=SF_{SF_{\Q}(g)}(f)\iso SF_{\Q}(fg),$$
-    where the last equality follows from (i).
-    \end{enumerate}
-\end{proof}
